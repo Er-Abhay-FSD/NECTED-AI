@@ -1,0 +1,176 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+/* Logo Styles */
+.logo-container img,
+.logo-container-ft img {
+    width: 30%;
+    height: auto;
+    max-width: 50%; /* Ensure the logo does not exceed its original size */
+}
+
+/* Logo Styles for header */
+.logo-container img {
+    background-color: #fbfafa;
+    max-width: 10%; /* Adjust the max-width as needed for the header */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a 3D shadow effect */
+}
+
+/* Logo Styles for footer */
+.logo-container-ft img {
+    max-width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Add a 3D shadow effect */
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(78, 169, 175);
+    color: #333;
+    padding: 1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    min-height: min-content; /* Adjusted the property for clarity */
+}
+
+/* Main Section Styles */
+.main-section {
+    margin: 1em auto;
+    padding: 2em;
+    font-style: italic;
+    background-color: #ece4e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    /* Take up at least the full height of the viewport */
+}
+
+/* Apply shadow to linked images */
+a img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Invitation Section Styles */
+.invitation-section {
+    
+    text-align: center; /* Center text horizontally */
+}
+
+/* Join Now Button Styles */
+.join-now-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    width: 240px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles */
+footer {
+    background-color: white;
+    color: grey;
+    margin-top: auto; /* Push the footer to the bottom */
+    padding: 1em;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hide the modal by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 2em;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Desktop and Tablet Styles */
+@media only screen and (min-width: 769px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 1em; /* Add margin at the bottom of the footer */
+    }
+
+    .footer-left,
+    .footer-right {
+        text-align: center; /* Center text in both left and right footer sections */
+        margin: 0; /* Remove margin to ensure center alignment */
+    }
+
+    .join-now-button {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center; /* Center content */
+        padding-right: 1em;
+        margin-bottom: 1em;
+    }
+
+    .footer-right {
+        width: 100%;
+        /* Center text in the right footer section */
+    }
+
+    .join-now-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Center header logo in small screens */
+    .logo-container img {
+        max-width: 100%; /* Adjust the max-width as needed */
+        margin: 0 auto; /* Center the logo */
+    }
+
+    header {
+        text-align: center; /* Center text in the header */
+    }
+    .main-section {
+        margin: 1em auto;
+        padding: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        font-style: italic;
+        background-color: #ece4e4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Center content vertically */
+        /* Take up at least the full height of the viewport */
+    }
+}
+
+/* Copyright notice by Abhay Singh */
+/* © 2023 Abhay Singh. All rights reserved. */
